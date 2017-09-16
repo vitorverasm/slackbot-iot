@@ -4,23 +4,26 @@ import psutil
 import RPi.GPIO as GPIO
 import time
 from slackclient import SlackClient
-#GPIO SETUP
+
+#GPIO SETUP(you can change for whatever you want)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 GPIO.setup(8,GPIO.OUT)
 GPIO.setup(16,GPIO.OUT)
 GPIO.setup(22,GPIO.OUT)
 
-slack_client = SlackClient("xoxb-242242064562-GoHh3TxKvcHVj6mN1FcUT6o9")
+#use your slack api
+slack_client = SlackClient("your-slack-api-here")
 
 
 # Fetch your Bot's User ID
 user_list = slack_client.api_call("users.list")
 for user in user_list.get('members'):
-    if user.get('name') == "iotbot":
+    if user.get('name') == "your-bot-name":
         slack_user_id = user.get('id')
         break
-
+        
+#functions to automate when message is called
 def lightOn():
     GPIO.output(8, 1)
     print ("light on!")
@@ -42,7 +45,7 @@ def alarmOff():
 # Start connection
 if slack_client.rtm_connect():
     print ("Connected!")
-
+    #matching messages
     while True:
         for message in slack_client.rtm_read():
             if 'text' in message and message['text'].startswith("<@%s>" % slack_user_id):
