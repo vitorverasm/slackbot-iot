@@ -61,7 +61,7 @@ for user in user_list.get('members'):
 
 ```
 
-###Personalize
+### Personalize
 Now you can personalize your bot with some GPIO pins(any doubts about GPIO pins go to [RPI.GPIO Documentation](https://pypi.python.org/pypi/RPi.GPIO)):
 ```
 from slackclient import SlackClient
@@ -93,7 +93,7 @@ if re.match(r'.*(light off).*', message_text, re.IGNORECASE):
 	text="Light off!", //bot response
 	as_user=True)
 ```
-#Now, run it!
+# Now, run it!
 ![yeeeeah](https://i.imgur.com/mvKbycf.png)
 
 ### Physical gpio setup example
@@ -109,7 +109,7 @@ Now a picture of the physical setup:
 
 ![setup1](https://i.imgur.com/vF5HTQF.jpg)
 
-####More information about the relay board can be found on [relay-board](https://github.com/vitor-veras/relay_board.git)
+#### More information about the relay board can be found on [relay-board](https://github.com/vitor-veras/relay_board.git)
 ## Links
 Some useful links :)
 
