@@ -1,6 +1,7 @@
 # Slack Bot with internet of things
 
 This is a project of a slack bot, to automate your office/room/lab using some Raspberry Pi GPIO pins.
+
 Usage: [Youtube](https://youtu.be/oNQft1fzo-o)
 
 ### Set up your slack workspace
