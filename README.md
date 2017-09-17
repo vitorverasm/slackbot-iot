@@ -112,6 +112,7 @@ Now a picture of the physical setup:
 ####More information about the relay board can be found on [relay-board](https://github.com/vitor-veras/relay_board.git)
 ## Links
 Some useful links :)
+
 http://blog.benjie.me/building-a-slack-bot-to-talk-with-a-raspberry-pi/
 
 https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/
