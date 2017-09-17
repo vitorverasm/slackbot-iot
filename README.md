@@ -113,7 +113,7 @@ Now a picture of the physical setup:
 ## Links
 Some useful links :)
 
-http://blog.benjie.me/building-a-slack-bot-to-talk-with-a-raspberry-pi/
+Credits to : http://blog.benjie.me/building-a-slack-bot-to-talk-with-a-raspberry-pi/
 
 https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/
 
