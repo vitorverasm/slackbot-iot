@@ -8,15 +8,17 @@ from slackclient import SlackClient
 #GPIO SETUP(you can change for whatever you want)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
+#gpio pins that i used, feel free to change
 GPIO.setup(8,GPIO.OUT)
 GPIO.setup(16,GPIO.OUT)
 GPIO.setup(22,GPIO.OUT)
 
-#use your slack api
+#PUT YOUR SLACK API
 slack_client = SlackClient("your-slack-api-here")
 
 
 # Fetch your Bot's User ID
+#PUT YOUR BOT'S NAME
 user_list = slack_client.api_call("users.list")
 for user in user_list.get('members'):
     if user.get('name') == "your-bot-name":
@@ -24,6 +26,7 @@ for user in user_list.get('members'):
         break
         
 #functions to automate when message is called
+#personalize
 def lightOn():
     GPIO.output(8, 1)
     print ("light on!")
