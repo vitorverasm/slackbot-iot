@@ -4,7 +4,7 @@ This is a project of a slack bot, to automate your office/room/lab using some Ra
 
 ### Set up your slack workspace
 
-Go to https://slack.com/ . First you'll need to create a new slack workspace to use in this project, or just get the API token from a existing workspace.
+Go to https://slack.com/ . First you'll need to create a new slack workspace to use in this project(or just get the API token from a existing bot in the workspace).
 Then, go to https://my.slack.com/services/new/bot and choose a username for your bot.
 
 After submit, we now have an API key. Copy this somewhere we'll need later.
@@ -101,7 +101,7 @@ if re.match(r'.*(light off).*', message_text, re.IGNORECASE):
 This is an example configuration, of how you can use the GPIO pins to turn on a Led.
 
 I'm using a Raspberry Pi B+ model 1 and the GPIO pins 6(Ground) and 8(GPIO). All the pins of this Raspberry that i'm using can be found in this picture:
-![gpio-pin](https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/images/physical-pin-numbers.png)
+![gpio-pin](https://i.imgur.com/4bQ4bgy.png)
 
 Now a picture of the physical setup:
 
