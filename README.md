@@ -38,14 +38,14 @@ pip3 install slackclient
 pip3 install psutil
 ```
 
-
-
-## Configuring the python file
-Download the python file:
+And download the python file:
 ```
 git clone https://github.com/vitor-veras/slackbot_iot.git
 ```
 
+
+
+## Configuring the python file
 After downloading slackbot_iot.py file there's some things you'll need to adapt to your bot, like your API token that we generated earlier.
 
 ```
