@@ -96,6 +96,11 @@ if re.match(r'.*(light off).*', message_text, re.IGNORECASE):
 	as_user=True)
 ```
 # Now, run it!
+
+```
+python3 slackbot_iot.py
+```
+
 ![yeeeeah](https://i.imgur.com/mvKbycf.png)
 
 ### Physical gpio setup example
